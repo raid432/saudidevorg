@@ -1,0 +1,33 @@
+<html>
+<head>
+<script>
+
+var test = {
+ prop: 42,
+ func: function() {
+ return this.prop;
+ },
+};
+document.write(test.func());
+
+var x = this;
+document.write(x);
+
+
+
+document.write(this === window);
+a = 37;
+document.write("<br>"+window.a);
+this.b = "it is mine";
+document.write("<br>"+window.b);
+document.write("<br>"+b);
+function myFunction() {
+ return this;
+}
+document.write(myFunction())
+</script>
+</head>
+<body>
+
+<body>
+</html>

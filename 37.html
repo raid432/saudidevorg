@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+
+var person = {
+ firstName: "Mohammed",
+ lastName: "Alali",
+ age: 30,
+fullName : function() {
+ return this.firstName + " " + this.lastName;
+}
+};
+document.write("firstName1" in person);
+document.write("<br>");
+
+var person = {
+ firstName: "Mohammed",
+ lastName: "Alali",
+ age: 30,
+fullName : function() {
+ return this.firstName + " " + this.lastName;
+}
+};
+document.write(person.hasOwnProperty("firstName"));
+
+</script>
+</head>
+<body>
+
+<body>
+</html>

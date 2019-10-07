@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+function student (subject,coordinatorName,nOofHours,NoofStudents)
+{this.subject=subject; this.coordinatorName=coordinatorName;this.nOofHours=nOofHours;this.NoofStudents=NoofStudents;}
+
+var student1 =new student("prgrammer","DR.Ahmed",3,1234);
+document.write("subject is "+student1.subject+"<br>");
+document.write("coordinatorName is "+student1.coordinatorName+"<br>");
+document.write("nOofHours is "+student1.nOofHours+"<br>");
+document.write("NoofStudents is "+student1.NoofStudents+"<br>");
+
+var employee ={
+subject:"prgrammer",
+coordinatorName:"DR.Ahmed",
+nOofHours:3,
+NoofStudents:1234,
+get dataGet(){ 
+return this.subject;},
+ set dataSet(value) { 
+ this.subject = value; }
+};
+employee.dataSet = "developer";
+
+document.write("subject is "+employee.subject+"<br>");
+</script>
+</head>
+<body>
+
+<body>
+</html>
