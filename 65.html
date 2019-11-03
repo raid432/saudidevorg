@@ -1,0 +1,20 @@
+<html>
+<head>
+<script>
+var person = {
+ fullName: function() {
+ return this.firstName + " " + this.lastName;
+ }
+}
+var person1 = {
+ firstName: "Mary",
+ lastName: "Doe"
+}
+document.write(person.fullName.apply(person1));
+
+</script>
+</head>
+<body>
+
+<body>
+</html>

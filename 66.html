@@ -1,0 +1,37 @@
+<html>
+<head>
+<script>
+var counter = 0;
+function add() {
+ counter += 1;
+}
+add();
+add();
+add();
+document.write(counter);
+document.write("</br>");
+function add() {
+ var counter = 0;
+ counter += 1;
+ return counter;
+}
+add();
+add();
+add();
+document.write(add());
+document.write("</br>");
+var add = (function () {
+ var counter = 0;
+ return function () {counter += 1; return counter}
+})();
+add();
+add();
+add();
+document.write(add())
+
+</script>
+</head>
+<body>
+
+<body>
+</html>
